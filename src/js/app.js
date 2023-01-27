@@ -11,5 +11,11 @@ window.addEventListener("DOMContentLoaded", () => {
   const isEven = (n) => n % 2 === 0;
   const filteredArray = numbersArray.filter(isEven);
 
+  filteredArray.forEach(f => {
+    let list = document.createElement("li");
+    list.innerText = f;
+    ul.appendChild(list);
+  });
+
   console.log(filteredArray);
 });
